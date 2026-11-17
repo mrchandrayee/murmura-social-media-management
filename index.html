@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#eef5f0"><title>Murmura — Social Media Management</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="app">
+<aside class="rail" id="rail">
+  <div class="brand"><span class="brand-icon">m</span><span class="brand-name">murmura</span></div>
+  <nav class="rail-nav" id="railNav">
+    <button class="active" data-page="Overview" title="Overview">⌂<span>Overview</span></button>
+    <button data-page="Compose" title="Compose">＋<span>Compose</span></button>
+    <button data-page="Calendar" title="Calendar">▦<span>Calendar</span></button>
+    <button data-page="Inbox" title="Inbox">✉<span>Inbox</span><i class="dot"></i></button>
+    <button data-page="Approvals" title="Approvals">✓<span>Approvals</span><i class="count">3</i></button>
+    <button data-page="Analytics" title="Analytics">▥<span>Analytics</span></button>
+    <button data-page="Listening" title="Listening">◉<span>Listening</span></button>
+  </nav>
+  <div class="rail-bottom"><button id="settingsBtn" title="Settings">⚙</button><button title="Help" id="helpBtn">?</button><span class="user-avatar">AC</span></div>
+</aside>
+<main class="main">
+<header class="topbar">
+ <div class="brand-mobile"><span class="brand-icon">m</span> murmura</div>
+ <nav class="top-tabs" id="topTabs"></nav>
+ <div class="top-right"><button class="workspace" id="workspace">◉ All brands⌄</button><button class="top-icon" id="bell">♧<i></i></button><span class="user-avatar">AC</span></div>
+</header>
+<section class="page" id="page"></section>
+</main>
+</div>
+<div class="modal-backdrop" id="modalBackdrop"><section class="modal"><button class="close" id="modalClose">×</button><div class="eyebrow">MURMURA WORKSPACE</div><h2 id="modalTitle">Create post</h2><p id="modalText">Compose content for your social channels.</p><form id="modalForm"><label>Post caption<textarea id="caption" rows="4" placeholder="Write something worth sharing..."></textarea></label><div class="modal-row"><label>Brand<select id="brandSelect"><option>Afternoon, Camila</option><option>Sunday Studio</option><option>Common Ground</option></select></label><label>Channel<select id="channelSelect"><option>Instagram</option><option>Facebook</option><option>LinkedIn</option><option>TikTok</option></select></label></div><div class="modal-actions"><button type="button" class="secondary" id="cancel">Cancel</button><button type="submit" class="dark-btn">Save draft ↗</button></div></form></section></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script></body></html>
